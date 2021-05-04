@@ -1,12 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"name": "dist",
-			"path": "dist"
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "presscokr"
+        }
+    ]
 }
