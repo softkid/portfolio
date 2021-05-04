@@ -63,7 +63,14 @@
 export default {
   metaInfo () {
     return {
-      title: this.$i18n.t('Home.title')
+      title: "PRESSCO - 소프트웨어를 만들다",  /* this.$i18n.t('Home.title') */
+      meta: [
+        { name: 'description', content:  'PRESSCO is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work.'},
+        { property: 'og:title', content: "PRESSCO - Build your software in your field of interest"},
+        { property: 'og:site_name', content: 'Pressco'},
+        { property: 'og:type', content: 'website'},    
+        { name: 'robots', content: 'index,follow'} 
+      ]
     }
   },
   data: () => ({
