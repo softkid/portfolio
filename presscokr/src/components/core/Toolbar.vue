@@ -3,6 +3,7 @@
     color="rgba(0, 0, 0, 0.12)"
     fixed
     flat
+    max-height="60"
   >
     <h1 class="headline">
       <span class="font-weight-black hidden-sm-and-down">
@@ -15,15 +16,14 @@
     <v-spacer />
     <v-btn
       text
-      class="subheading mr-4 hidden-xs-only"
-      color="primary"
+      class="subheading mr-4 hidden-xs-only" 
       href="http://store.pressco.kr"
     >
       Store
     </v-btn>
     <v-avatar>
       <img
-        :src="require('@/assets/img/kakao.png')"
+        :src="require('@/assets/kakao.png')"
         alt="OpenChat"
         @click="openchat"
       >

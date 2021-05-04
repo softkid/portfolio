@@ -1,15 +1,11 @@
 <template>
-  <v-app dark>
+  <v-app :dark="true">
     <core-toolbar />
     <v-container>
-      <v-img 
-      height="100%"
-      :src="require('@/assets/background.jpg')">
         <router-view />
-      </v-img>
     </v-container>
 
-    <core-footer />>
+    <core-footer />
   </v-app>  
 </template>
 <script>
@@ -20,15 +16,15 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss"> 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(assets/background.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
   text-align: center;
-  color: #2c3e50;
+  font-size: 11pt;
 }
-
 #nav {
   padding: 30px;
 
@@ -40,5 +36,9 @@ export default {
       color: #42b983;
     }
   }
+}
+
+.footer {
+  text-align: center
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-footer
     fixed
-    class="justify-center"
+    class="footer"
     style="opacity: 0.5;"
   >
     <v-flex
@@ -20,4 +20,4 @@ export default {
     // SocialMedia: () => import('@/components/SocialMedia')
   }
 }
-</script>
+</script> 

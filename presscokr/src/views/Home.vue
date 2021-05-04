@@ -34,7 +34,7 @@
             />
             <v-img
               :aspect-ratio="16/9"
-              :src="require('@/assets/img/' + theme.img + '.png')"
+              :src="require('@/assets/' + theme.img + '.png')"
               height="300"
               :class="`elevation-${hover ? 24 : 4}`"
               class="transition-swing"
@@ -92,14 +92,6 @@ export default {
         img: 'pressco',
         href: 'http://shop.pressco.kr'
       }
-      /*
-      {
-        name: 'WEB ERP',
-        desc: '프랜차이즈 중소기업에 필요한 WEB ERP ',
-        img: 'erp',
-        href: 'http://erp.pressco.kr'
-      }
-      */
     ]
   })
 }
