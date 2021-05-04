@@ -1,24 +1,26 @@
 <template>
   <v-app dark>
-    <core-drawer />
+    <core-toolbar />
 
-    <v-content class="hide-overflow">
-      <router-view />
+    <v-content>
+      <v-img
+        height="100%"
+        :src="require('@/assets/background.jpg')"
+        gradient="to bottom right, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.42)"
+      >
+        <router-view />
+      </v-img>
     </v-content>
+
+    <core-footer />
   </v-app>
 </template>
 
 <script>
 export default {
   components: {
-    CoreDrawer: () => import('@/components/core/Drawer')
+    CoreFooter: () => import('@/components/core/Footer'),
+    CoreToolbar: () => import('@/components/core/Toolbar')
   }
 }
 </script>
-
-<style>
-@import './assets/main.css';
-.text-decoration-none {
-  text-decoration: none;
-}
-</style>
