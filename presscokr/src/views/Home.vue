@@ -26,7 +26,7 @@
             target="_blank"
             max-width="450"
             rel="noopener"
-            :title="`WEB Kit - ${theme.name} Theme`"
+            :title="`WEB Kit - ${theme.name} `"
           >
             <div
               class="headline mb-3 text-uppercase"
@@ -68,6 +68,18 @@ export default {
   },
   data: () => ({
     themes: [
+      {
+        name: 'Coin KIT',
+        desc: '암호화폐/거래소/Dapp',
+        img: 'bitcoin',
+        href: 'http://bitcoin.pressco.kr'
+      },
+      {
+        name: 'Trading KIT',
+        desc: '암호화폐 자동트레이딩',
+        img: 'trading',
+        href: 'http://trading.pressco.kr'
+      },
       {
         name: 'Affiliate KIT',
         desc: '제휴사이트 링크',
