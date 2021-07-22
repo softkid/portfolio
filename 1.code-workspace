@@ -2,6 +2,9 @@
     "folders": [
         {
             "path": "presscokr"
+        },
+        {
+            "path": "profile"
         }
     ]
 }

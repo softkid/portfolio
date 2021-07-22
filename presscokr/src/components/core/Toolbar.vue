@@ -42,7 +42,7 @@ export default {
   }),
   methods: {
     openchat () {
-      window.open('https://open.kakao.com/o/sjFAfxwb', 'mywindow', 'status=1')
+      window.open('https://open.kakao.com/me/suro', 'mywindow', 'status=1')
     },
     ...mapMutations('app', ['toggleDrawer'])
   }
